@@ -1,4 +1,4 @@
-# Лабораторна робота №1
+# Лабораторна робота №1 | [Github Pages](https://lestaplus.github.io/frontend-labs/lab1/)
 
 ## Інструкція з локального запуску
 
