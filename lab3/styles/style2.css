@@ -1,0 +1,45 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  text-align: center;
+}
+
+#container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 65%;
+  height: 700px;
+  background-color: lightblue;
+  font-size: 2.5rem;
+}
+
+#header {
+  width: 100%;
+  height: 150px;
+  background-color: #70a7df;
+  line-height: 150px;
+}
+
+#navigation {
+  width: 100%;
+  height: 120px;
+  background-color: #fac0f6;
+  line-height: 120px;
+}
+
+#right-menu {
+  width: 25%;
+  height: calc(100% - 270px);
+  background-color: #93b071;
+  line-height: 200px;
+}
+
+#content {
+  width: 75%;
+  height: calc(100% - 270px);
+  background-color: #bce68b;
+  line-height: 200px;
+}
