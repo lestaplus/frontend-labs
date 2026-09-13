@@ -1,0 +1,111 @@
+.personal-table {
+  border-collapse: collapse;
+}
+
+th,
+td {
+  border: 3px ridge black;
+  padding: 15px 50px;
+}
+
+.table-header {
+  color: black;
+  background-color: #068f8f;
+}
+
+.table-header:hover {
+  color: #068f8f;
+  background-color: black;
+}
+
+.table-header + tr {
+  color: black;
+  background-color: #f5f506;
+}
+
+.table-header + tr:hover {
+  color: #f5f506;
+  background-color: black;
+}
+
+.phone-container,
+.phone-container2 {
+  display: inline-block;
+  margin: 20px 10px;
+  width: 100px;
+  height: 200px;
+  background-color: #d6e3bc;
+  border: 2px solid #141414;
+  border-radius: 1rem;
+  font-family: Arial, Helvetica, sans-serif;
+  vertical-align: top;
+}
+
+.phone-container {
+  position: relative;
+}
+
+.phone-container .phone-screen {
+  position: absolute;
+  top: 5%;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  background-color: white;
+  width: 80%;
+  height: 48%;
+  line-height: 3.3;
+  border: 2px solid #141414;
+  border-radius: 0.8rem;
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+.phone-container .phone-buttons {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 3%;
+  width: 80%;
+  height: 40%;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 0;
+}
+
+.phone-container2 .phone-screen {
+  background-color: white;
+  width: 80%;
+  height: 48%;
+  margin-top: 10%;
+  margin-left: 50%;
+  transform: translate(-50%);
+  border: 2px solid #141414;
+  border-radius: 0.8rem;
+  line-height: 3.3;
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+.phone-container2 .phone-buttons {
+  width: 80%;
+  height: 40%;
+  margin-top: 5%;
+  margin-left: 50%;
+  transform: translate(-50%);
+  text-align: center;
+  font-size: 0;
+}
+
+.phone-container .phone-buttons div,
+.phone-container2 .phone-buttons div {
+  background-color: #3f3151;
+  box-sizing: border-box;
+  width: 25%;
+  height: 25%;
+  display: inline-block;
+  font-size: 1rem;
+  margin: 3px;
+  border: 2px solid #141414;
+  border-radius: 50%;
+}
