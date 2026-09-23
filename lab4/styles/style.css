@@ -1,0 +1,24 @@
+.movies-title,
+.movies-list-item {
+  cursor: pointer;
+}
+
+.movies-list-item::marker {
+  color: black;
+}
+
+.dark-green-background {
+  background-color: #015e4c; 
+}
+
+.dark-purple-background {
+  background-color: #370475;
+}
+
+.white-text-color {
+  color: white;
+}
+
+a {
+  display: inline-block;
+}
