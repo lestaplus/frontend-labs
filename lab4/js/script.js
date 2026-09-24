@@ -4,12 +4,12 @@ const moviesListItem = document.querySelector('.movies-list-item');
 moviesTitleElement.onclick = () => {
   moviesTitleElement.classList.toggle('dark-green-background');
   moviesTitleElement.classList.toggle('white-text-color');
-}
+};
 
 moviesListItem.onclick = () => {
   moviesListItem.classList.toggle('dark-purple-background');
   moviesListItem.classList.toggle('white-text-color');
-}
+};
 
 const newImageContainer = document.querySelector('.new-image');
 
@@ -26,7 +26,7 @@ addBtn.onclick = () => {
   const pragueLink = document.createElement('a');
   pragueLink.href = 'https://praha.eu/';
 
-  const pragueImage = document.createElement('img', );
+  const pragueImage = document.createElement('img');
   pragueImage.classList.add('favorite-city-img');
   pragueImage.src = 'images/prague.jpg';
   pragueImage.alt = 'столиця Чехії, м. Прага';
@@ -36,7 +36,7 @@ addBtn.onclick = () => {
   newImageContainer.append(pragueLink);
 
   containsImage = true;
-}
+};
 
 deleteBtn.onclick = () => {
   newImageContainer.innerHTML = '';
@@ -47,12 +47,12 @@ increaseBtn.onclick = () => {
   if (!containsImage) return;
 
   const pragueImage = newImageContainer.querySelector('.favorite-city-img');
-  pragueImage.width += (pragueImage.width < 1500) ? 100 : 0;
-}
+  pragueImage.width += pragueImage.width < 1500 ? 100 : 0;
+};
 
 decreaseBtn.onclick = () => {
   if (!containsImage) return;
 
   const pragueImage = newImageContainer.querySelector('.favorite-city-img');
-  pragueImage.width -= (pragueImage.width > 100) ? 100 : 0;
-}
+  pragueImage.width -= pragueImage.width > 100 ? 100 : 0;
+};
