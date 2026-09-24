@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.user-data {
+  display: flex;
+  justify-content: center;
+  height: 400px;
+  padding: 10px;
+  gap: 20px;
+}
+
+.user-data-form fieldset {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 350px;
+  height: 100%;
+  border: none;
+}
+
+.user-data-form fieldset legend {
+  text-align: center;
+  font-weight: bold;
+}
+
+.user-data-form fieldset input {
+  border: 1px solid #5b5b5b;
+  border-radius: 3px;
+}
+
+.user-data-form fieldset > legend,
+.user-data-form fieldset > input,
+.user-data-form fieldset > button {
+  width: 90%;
+  padding: 10px;
+}
+
+.user-data .user-data-output {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 350px;
+  padding: 10px;
+  background-color: #f0f0f0;
+}
+
+.user-data-output .data-header {
+  text-align: center;
+}
+
+.user-data-form fieldset input.valid {
+  border: 1px solid #14b702;
+}
+
+.user-data-form fieldset input.invalid {
+  border: 1px solid #d60202;
+}
+
+.error-message {
+  color: #d60202;
+}
+
+.table-container {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  margin-top: 25px;
+}
+
+.table-container input {
+  position: absolute;
+  width: 200px;
+}
+
+.numbers-table {
+  margin-top: 40px;
+  border-collapse: collapse;
+}
+
+.numbers-table td {
+  border: 1px solid #5b5b5b;
+  padding: 10px;
+  text-align: center;
+}
+
+.numbers-table .selected-cell {
+  cursor: pointer;
+}

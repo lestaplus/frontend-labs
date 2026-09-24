@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Шевцов А. І., ІМ-41, Лабораторна робота №5, варіант №35</title>
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+  <body>
+    <div class="user-data">
+      <form class="user-data-form">
+        <fieldset>
+          <legend>Форма для заповнення</legend>
+
+          <input
+            type="text"
+            name="fullname"
+            id="fullname"
+            aria-label="Повне ім'я"
+            placeholder="ПІБ"
+            required
+          />
+
+          <input
+            type="text"
+            name="faculty"
+            id="faculty"
+            aria-label="Факультет"
+            placeholder="Факультет"
+            required
+          />
+
+          <input
+            type="date"
+            name="birthday"
+            id="birthday"
+            aria-label="Дата народження"
+            placeholder="Дата народження"
+            required
+          />
+
+          <input
+            type="text"
+            name="address"
+            id="address"
+            aria-label="Адреса"
+            placeholder="Адреса"
+            required
+          />
+
+          <input
+            type="email"
+            name="email"
+            id="email"
+            aria-label="Електронна пошта"
+            placeholder="Пошта"
+            required
+          />
+
+          <button
+            type="submit"
+            id="submit-btn"
+            onclick="validateForm(event, form)"
+          >
+            Підтвердити
+          </button>
+        </fieldset>
+      </form>
+
+      <div class="user-data-output">
+        <h4 class="data-header">Введені дані</h4>
+        <p class="data"><b>ПІБ: </b>ПППППП І. Б.</p>
+        <p class="data"><b>Факультет: </b>ФФФФ</p>
+        <p class="data"><b>Дата народження: </b>РРРР-ММ-ДД</p>
+        <p class="data"><b>Адреса: </b>м. ТТТТТТ</p>
+        <p class="data"><b>Пошта: </b>тттттт@ттттт.ттт</p>
+      </div>
+    </div>
+
+    <div class="table-container">
+      <input type="color" id="color-for-table" />
+      <table class="numbers-table">
+        <tr></tr>
+        <tr></tr>
+        <tr></tr>
+        <tr></tr>
+        <tr></tr>
+        <tr></tr>
+      </table>
+    </div>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
